@@ -200,14 +200,14 @@ form ion-icon {
     grid-gap: 35px;
   }
   .container.initial .brand {
-    font-size: 4rem;
+    font-size: 3.8rem;
   }
   .container.initial form {
     max-width: 500px;
   }
   .container.initial form input {
     padding: 10px;
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -240,3 +240,8 @@ footer {
     margin-bottom: 0;
   }
   
+  @media (max-width: 768px) {
+    .footer-name p {
+        font-size: 14px;
+    }
+}
