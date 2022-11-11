@@ -74,6 +74,8 @@ input {
   background-color: rgb(255, 255, 255);
   display: inline-block;
   font-family: "Nunito";
+  color: rgb(26, 26, 27);
+  text-transform: lowercase;
 }
 
 form button {
@@ -148,6 +150,7 @@ form ion-icon {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 10px;
+  text-transform: capitalize;
 }
 
 .view-btn {
@@ -200,14 +203,14 @@ form ion-icon {
     grid-gap: 35px;
   }
   .container.initial .brand {
-    font-size: 3.8rem;
+    font-size: 3.5rem;
   }
   .container.initial form {
     max-width: 500px;
   }
   .container.initial form input {
     padding: 10px;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
 }
 
@@ -221,11 +224,7 @@ footer {
     width: 100%;
   }
   
-  .dark footer {
-    background-color: rgb(17, 17, 17);
-  }
-  
-  .footer-name p {
+.footer-name p {
     font-weight: 400;
     font-family: 'Alegreya Sans SC', sans-serif;
     letter-spacing: 2px;
@@ -238,10 +237,16 @@ footer {
     margin-right: auto;
     margin-top: 0;
     margin-bottom: 0;
-  }
+}
   
-  @media (max-width: 768px) {
-    .footer-name p {
-        font-size: 14px;
-    }
+@media only screen and (max-width: 900px) {
+  .footer-name p {
+      font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .footer-name p {
+      font-size: 13px;
+  }
 }
